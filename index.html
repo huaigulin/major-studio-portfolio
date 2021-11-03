@@ -217,6 +217,58 @@
                             To answer the second question, I think Aaron’s feedback of looking into architectural tools that are user-centered is really helpful, because it can inform me on what a good user experience could look like.
                         </p>
                     </li>
+                    <li>
+                        <h3>7-in-7 Prototypes</h3>
+                        <p>Before starting with prototypes, I spent some time thinking about how I should approach them. I choose p5.js as a starting point.</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    p5.js is a terrible tool. That's how I felt every time I need to do a project with it. It is not only a poor way to learn coding, but it is also super inefficient to do dynamic drawing. Why? Think about how you do a drawing with p5: 
+                                </p>
+                                <ol>
+                                    <li>
+                                        First you imagine a shape, such as a circle, in your head or in a sketch on paper. You cannot draw it directly on p5's canvas.
+                                    </li>
+                                    <li>
+                                        Then you abstract that shape in p5's terms, "circle(x, y, d)". You have to not only memorize (or pull up the reference website to look for) the syntax of the circle formula, which is unnecessary, but also estimate the position of the circle on your canvas, which can rarely be correct at first guess.
+                                    </li>
+                                    <li>
+                                        When you want to adjust the position or size of your shape, the manipulation is indirect. For example, you want to make the circle move to the right on your screen for a little. You know how much you want to move, but how much increase in the x value is enough? You have no idea. So you add a number to x and see if the change is enough, then adjust it several times more. This is just bad user experience.
+                                    </li>
+                                    <li>
+                                        The relation between time and motion in p5 is abstract and invisible. draw() function makes animations (typically) run at  60 frames per second, but p5 does not provide any visualization connecting motion with time. Therefore implementing every motion in p5 is like solving a math problem.
+                                    </li>
+                                    <li>
+                                        On top of that, if we make time change visible, we can then enable another powerful feature: the change of object states and variable values over time by direct manipulation. It is achievable to perform a state or variable change like movement from point A to B, a rotation, or a color update by just doing a few mouse clicks and drags.
+                                    </li>
+                                    <li>
+                                        For most people, objects, arrays, if-else statements, and for loops are more than enough to create dynamic drawings. These basic data structures and coding logics are easy to visualize and can be done on a graphic UI level. I don't think it's necessary for people to manually write these code and worry about nitty gritties like JavaScript syntax and undefined variables. Unless someone wants to implement a complicated recursion, a merge sort, or a shortest-path algorithm, coding is not needed.
+                                    </li>
+                                    <li>
+                                        Then I wonder is it even necessary to think in terms of these coding languages. Arrays and objects are just some containers that hold data. If-else statements are just conditionals. For loops are just repetitions. If I can provide creators with intuitive representations of these commonplace logics, then there's barely any need for coding languages.
+                                    </li>
+                                </ol>
+                                <p>
+                                    I pick p5.js because it is representational of what we shouldn't do with a creative tool. I think many of the rules also apply to other tools. I want to start with a prototype that could solve all the problems of p5, and then during the process, see if I can address shortcomings of other tools.
+                                </p>
+                            </li>
+                            <li>
+                                Why do creators need coding at first place? Because coding gives them a toolbox to manipulate input data and produce some forms of output. So as long as I can provide creators with a way to visualize and manipulate data dynamically, there is no need to code. A computer program is just a toolbox that can do different things at different time.
+                            </li>
+                            <li>
+                                I want to start with prototyping my tool as a dynamic illustrator.  Adobe Illustrator(Ai) is a tool that does static, vectorized illustrations. There are online tools that convert Ai drawings to p5.js code. Ai shapes and p5.js shapes are interchangeable. If I can add features to manipulate motions relative to time change, plus some logics that address the needs to shape input, I will have a dynamic illustrator.
+                            </li>
+                        </ul>
+                        <ol>
+                            <li>
+                                <h3>Prototype 1: role prototype</h3>
+                                <img src="public/img/prototype_1.png" style="width: 1000px;">
+                            </li>
+                            <li>
+                                <h3>Prototype 2: look-and-feel prototype</h3>
+                            </li>
+                        </ol>
+                    </li>
                 </ul>
             </div>
         </li>
