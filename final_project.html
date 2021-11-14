@@ -11,6 +11,7 @@
           $(".nav").load("nav.html");
         });
     </script>
+    <link href="jquery-ui.css" rel="stylesheet">
 </head>
 <body>
     <div class="nav"></div>
@@ -19,115 +20,111 @@
         <li>
             <div>
                 <h2>Final Project</h2>
-                <ul>
-                    <li>
-                        <div>
-                            <h3>Sketching/Observational Exercise</h3>
-                                <p>Areas of research: immediate feedback for creators</p>
-                                <p>Research question: </p>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            Initial Question: How can I create tools to achieve dynamic data visualization, while still give creators immediate feedbacks?
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p><b>Update 1: What is the most effective way to translate one's design/art/data ideas into visualization? Do creators have to abstract their ideas into symbols, formulae, and code, and then and only then visualization can happen? Can current tools achieve direct manipulations?</b></p>
-                                    </li>
-                                </ul>
-                                <p>Data drawing: a 3D version of Google Maps restaurant reviews</p>
-                                <video src="public/video/data_sketch3.mp4" width="400" controls></video>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Inventory/Connect Exercise</h3>
+                <div id="accordion">
+                    <h3>Sketching/Observational Exercise</h3>
+                    <div>
+                        <p>Areas of research: immediate feedback for creators</p>
+                        <p>Research question: </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Initial Question: How can I create tools to achieve dynamic data visualization, while still give creators immediate feedbacks?
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>Update 1: What is the most effective way to translate one's design/art/data ideas into visualization? Do creators have to abstract their ideas into symbols, formulae, and code, and then and only then visualization can happen? Can current tools achieve direct manipulations?</b></p>
+                            </li>
+                        </ul>
+                        <p>Data drawing: a 3D version of Google Maps restaurant reviews</p>
+                        <video src="public/video/data_sketch3.mp4" width="400" controls></video>
+                    </div>
+
+
+                    <h3>Inventory/Connect Exercise</h3>
+                    <ul>
+                        <li>
+                            <h3>Inventory</h3>
+                            <p>Creative tools to investigate: <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Reactable">Reactable</a>, <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/56011933">Cuboino</a>, <a target="_blank" rel="noopener noreferrer" href="https://shop.robolink.com/">Robolink</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/">Figma</a>, <a target="_blank" rel="noopener noreferrer" href="https://derivative.ca/">TouchDesigner</a></p>
+                            <p>Characterizing Visual Programming Approaches for End-User Developers: A Systematic Review - <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/abstract/document/9320477/">Kuhail, Mohammad Amin, Shahbano Farooq, Rawad Hammad, and Mohammed Bahja. "Characterizing Visual Programming Approaches for End-User Developers: A Systematic Review." IEEE Access (2021).</a></p>
+                        </li>
+                        <li>
+                            <h3>Locate Forms</h3>
+                            <p>Audience: Who is my project's audience? Are they scientists? Artists? Engineers? Children learning to code? What levels of programming background do they have?</p>
+                        </li>
+                        <li>
+                            <h3>Connect</h3>
+                            <p>- Douglas Engelbart: founder of HCI, creator of mouse and network computers, precursors to graphical user interfaces. His work has enormous influence on how we interact with computers today.</p>
+                            <p>- Bret Victor: Inspiring works and demos on visual programming and data visualization (http://worrydream.com/)
+                                <ol>
+                                    <li>Data Visualization Demo: <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/66085662">https://vimeo.com/66085662</a></li>
+                                    <li>Art Visualization Demo: <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/64895205">https://vimeo.com/64895205</a></li>
+                                </ol>
+                            </p>
+                        </li>
+                    </ul>
+
+
+                    <h3>Ask/Interview/Visit Exercise</h3>
+                    <ol>
+                        <li>
+                            <h3>IDEO Method Cards</h3>
+                            <p>Surveys & Questionnaires (in first person)</p>
+                            <ol>
+                                <li>What tools do I use to visualize my design?</li>
+                                <li>What tools do I like most? Why?</li>
+                                <li>What tools do I use most? Why?</li>
+                                <li>What is my programming proficiency?</li>
+                                <li>How do I think about using programming to implement my design ideas?</li>
+                                <li>What is my current design/data visualization workflow? Do I think it is efficient?</li>
+                            </ol>
+                            <p>Activity Analysis</p>
+                            <ol>
+                                <li>Ideation: this is the phase that designers/scientists come up with ideas in their brains.</li>
+                                <li>Data Collection: depending on their work, users might collect data from experiments or generate input by themselves. Data can take many forms, from numeric values to videos. The amount of data and its complexity may also vary.</li>
+                                <li>Setting Parameters and Variables: users extract variables and parameters from their data.</li>
+                                <li>Coming up with Algorithms: users need to come up with algorithms that align with their data. Our tools need to help them with this activity.</li>
+                                <li>Experiments/Testing: when scientists need to prove a theory or formula, they need to test their visualization against new data and the visualization needs to update with data. When designers need to validate their prototypes, they can test their prototypes in real scenarios.</li>
+                                <li>Generalization/Reproduction/Summary: users should be able to generalize, reproduce, and summarize their findings.</li>
+                                <li>Publishing: the generated visualization can be shared with others or published to a platform. And tools should make it easy not only for users to publish, but also for readers to understand/interpret.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Interview</h3>
                             <ul>
                                 <li>
-                                    <h3>Inventory</h3>
-                                    <p>Creative tools to investigate: <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Reactable">Reactable</a>, <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/56011933">Cuboino</a>, <a target="_blank" rel="noopener noreferrer" href="https://shop.robolink.com/">Robolink</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/">Figma</a>, <a target="_blank" rel="noopener noreferrer" href="https://derivative.ca/">TouchDesigner</a></p>
-                                    <p>Characterizing Visual Programming Approaches for End-User Developers: A Systematic Review - <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/abstract/document/9320477/">Kuhail, Mohammad Amin, Shahbano Farooq, Rawad Hammad, and Mohammed Bahja. "Characterizing Visual Programming Approaches for End-User Developers: A Systematic Review." IEEE Access (2021).</a></p>
+                                    <p>My interview isn't an exact interview in the sense that I go find someone and ask them some questions. But I'm still able to observe my "interviewee" and her body of knowledge and experience, and help me build my understaning. I "interviewed" an expert (without her consent, unfortunately), by watching her explaining her work process in a video on YouTube. And I think this "interview" is at least equally (or even more) valuable as a real one.</p>
                                 </li>
                                 <li>
-                                    <h3>Locate Forms</h3>
-                                    <p>Audience: Who is my project's audience? Are they scientists? Artists? Engineers? Children learning to code? What levels of programming background do they have?</p>
+                                    <p>What is this "interview" about?</p>
+                                    <p>- Interaction designer <a target="_blank" rel="noopener noreferrer" href="https://www.synthestruct.com/">Ginger Leigh(Synthestruct)</a> uses TouchDesigner to create an interactive light installation.</p>
                                 </li>
                                 <li>
-                                    <h3>Connect</h3>
-                                    <p>- Douglas Engelbart: founder of HCI, creator of mouse and network computers, precursors to graphical user interfaces. His work has enormous influence on how we interact with computers today.</p>
-                                    <p>- Bret Victor: Inspiring works and demos on visual programming and data visualization (http://worrydream.com/)
-                                        <ol>
-                                            <li>Data Visualization Demo: <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/66085662">https://vimeo.com/66085662</a></li>
-                                            <li>Art Visualization Demo: <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/64895205">https://vimeo.com/64895205</a></li>
-                                        </ol>
-                                    </p>
+                                    <p>My findings, preliminary conclusions, and more questions:</p>
+                                    <p>- While I find Synthestruct's works are absolutely cool and amazing, the amount of coding and algebraic manipulations she went through in TouchDesigner is enormous.</p>
+                                    <p>- For most of her works, the output is light in 3D geometric patterns, and input can vary from brain waves, heartbeat, or dataset that produce organized patterns.</p>
+                                    <p>- A lot of effort went into <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/hrBfmXunf5s?t=1740">coding dynamic simulations</a>.</p>
+                                    <p>So my doubts are:</p> 
+                                    <p>- Is it really necessary to abstract the geometric patterns in her brain through so many layers of algebraic representations in TouchDesigner?</p>
+                                    <p>- Can we achieve more direct manipulations that do not require artists to translate patterns/drawings/ideas in their heads into all kinds of symbols and parameters in a software?</p>
+                                    <p>- Do artists have to code? Or is it just because they have bad tools?</p>
                                 </li>
                             </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h3>Ask/Interview/Visit Exercise</h3>
-                            <ol>
-                                <li>
-                                    <h3>IDEO Method Cards</h3>
-                                    <p>Surveys & Questionnaires (in first person)</p>
-                                    <ol>
-                                        <li>What tools do I use to visualize my design?</li>
-                                        <li>What tools do I like most? Why?</li>
-                                        <li>What tools do I use most? Why?</li>
-                                        <li>What is my programming proficiency?</li>
-                                        <li>How do I think about using programming to implement my design ideas?</li>
-                                        <li>What is my current design/data visualization workflow? Do I think it is efficient?</li>
-                                    </ol>
-                                    <p>Activity Analysis</p>
-                                    <ol>
-                                        <li>Ideation: this is the phase that designers/scientists come up with ideas in their brains.</li>
-                                        <li>Data Collection: depending on their work, users might collect data from experiments or generate input by themselves. Data can take many forms, from numeric values to videos. The amount of data and its complexity may also vary.</li>
-                                        <li>Setting Parameters and Variables: users extract variables and parameters from their data.</li>
-                                        <li>Coming up with Algorithms: users need to come up with algorithms that align with their data. Our tools need to help them with this activity.</li>
-                                        <li>Experiments/Testing: when scientists need to prove a theory or formula, they need to test their visualization against new data and the visualization needs to update with data. When designers need to validate their prototypes, they can test their prototypes in real scenarios.</li>
-                                        <li>Generalization/Reproduction/Summary: users should be able to generalize, reproduce, and summarize their findings.</li>
-                                        <li>Publishing: the generated visualization can be shared with others or published to a platform. And tools should make it easy not only for users to publish, but also for readers to understand/interpret.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <h3>Interview</h3>
-                                    <ul>
-                                        <li>
-                                            <p>My interview isn't an exact interview in the sense that I go find someone and ask them some questions. But I'm still able to observe my "interviewee" and her body of knowledge and experience, and help me build my understaning. I "interviewed" an expert (without her consent, unfortunately), by watching her explaining her work process in a video on YouTube. And I think this "interview" is at least equally (or even more) valuable as a real one.</p>
-                                        </li>
-                                        <li>
-                                            <p>What is this "interview" about?</p>
-                                            <p>- Interaction designer <a target="_blank" rel="noopener noreferrer" href="https://www.synthestruct.com/">Ginger Leigh(Synthestruct)</a> uses TouchDesigner to create an interactive light installation.</p>
-                                        </li>
-                                        <li>
-                                            <p>My findings, preliminary conclusions, and more questions:</p>
-                                            <p>- While I find Synthestruct's works are absolutely cool and amazing, the amount of coding and algebraic manipulations she went through in TouchDesigner is enormous.</p>
-                                            <p>- For most of her works, the output is light in 3D geometric patterns, and input can vary from brain waves, heartbeat, or dataset that produce organized patterns.</p>
-                                            <p>- A lot of effort went into <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/hrBfmXunf5s?t=1740">coding dynamic simulations</a>.</p>
-                                            <p>So my doubts are:</p> 
-                                            <p>- Is it really necessary to abstract the geometric patterns in her brain through so many layers of algebraic representations in TouchDesigner?</p>
-                                            <p>- Can we achieve more direct manipulations that do not require artists to translate patterns/drawings/ideas in their heads into all kinds of symbols and parameters in a software?</p>
-                                            <p>- Do artists have to code? Or is it just because they have bad tools?</p>
-                                        </li>
-                                    </ul>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hrBfmXunf5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </li>
-                            </ol>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>Embody through Making</h3>
-                        <ol>
-                            <li>
-                                <h3>Map the system</h3>
-                                <img src="public/img/embody.png">
-                            </li>
-                        </ol>
-                    </li>
-                    <li>
-                        <h3>Midterm Reflection</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hrBfmXunf5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                    </ol>
+
+
+                    <h3>Embody through Making</h3>
+                    <ol>
+                        <li>
+                            <h3>Map the system</h3>
+                            <img src="public/img/embody.png">
+                        </li>
+                    </ol>
+
+
+                    <h3>Midterm Reflection</h3>
+                    <div>
                         <p>
                             I really appreciate all the feedbacks that the external critics and my peers had given, they raised questions that I had not thought about before and helped me organize this project around several crucial questions.
                         </p>
@@ -152,9 +149,11 @@
                         <p>
                             To answer the second question, I think Aaron’s feedback of looking into architectural tools that are user-centered is really helpful, because it can inform me on what a good user experience could look like.
                         </p>
-                    </li>
-                    <li>
-                        <h3>7-in-7 Prototypes</h3>
+                    </div>
+
+
+                    <h3>7-in-7 Prototypes</h3>
+                    <div>
                         <p>Before starting with prototypes, I spent some time thinking about how I should approach them. I choose p5.js as a starting point.</p>
                         <ul>
                             <li>
@@ -254,9 +253,32 @@
                                 <img src="public/img/prototype7_3.jpg" style="width: 1200px;">
                             </li>
                         </ol>
-                    </li>
-                </ul>
+                    </div>
+
+
+
+                </div>
             </div>
         </li>
     </ul>
+
+
+
+
+
+    <script src="jquery-ui.js"></script>
+    <script>
+    $( "#accordion" ).accordion({
+        collapsible: true
+      });
+    // Hover states on the static widgets
+    $( "#dialog-link, #icons li" ).hover(
+        function() {
+            $( this ).addClass( "ui-state-hover" );
+        },
+        function() {
+            $( this ).removeClass( "ui-state-hover" );
+        }
+    );
+    </script>
 </body>
